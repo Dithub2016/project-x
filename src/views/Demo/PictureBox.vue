@@ -8,31 +8,7 @@
 </template>
 
 <style lang="less">
-  /*------------------------------------*\
-    #PictureBox
-  \*------------------------------------*/
-  #PictureBox() {
-    .wrap(@width, @height) {
-      position: relative;
-      width: @width;
-      height: @height;
-    }
-    .img() {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .tag() {
-      position: absolute;
-      right: 8px;
-      bottom: 8px;
-      z-index: 2;
-    }
-  }
+  @import "~@/style/index";
 
   .picture-box {
     #PictureBox.wrap(200px, 200px);
